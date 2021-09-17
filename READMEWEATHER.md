@@ -1,43 +1,33 @@
-### Add a Backend to your Weather App
+# Yes, another Weather App
 
 ### Introduction
+You already have a front-end weather app. Let's reuse that connection with the OpenWeather API and create a simple app. 
+Little fun fact: you build this in week 7! Do you remember week 7?
 
-You already have a front-end weather app, and let's add some backend to make it more robust. 
-Little fun fact: you build this in week 7! Do you remember week 7?  
+### Overview
+You would have to create a full-stack project following the template from past projects. 
+In the front-end, your app will display ONE day forecast for the user using the info collected from the OpenWeather API ﻿https://openweathermap.org/api
 
-# Overview
-
-Hopefully, you already have an app that looks similar to this requirement:
-![Screenshoot](https://github.com/Yosolita1978/screenshoots/blob/main/week11/Screen%20Shot%202021-08-20%20at%209.00.38%20AM.png?raw=true)
-
-And hopefully, your project folder distribution looks like this:
-* Techtonica Assigments
-  - Main Folder Weather App
-        - Public
-        - Src
-        - Readme
-        - gitignore
-        - package.json
-        
-Inside your Main Folder Weather App create a new express project (it means to create a new folder for your backend)
-
-### Backend: 
-You need to use Postgress and Express to connect your DB. 
-Your DB should have a table "users" with at least this columns:
+## Backend:
+You need to use Postgress and Express to connect your DB. Your DB should have a table "users" with at least this columns:
 * Users ID
+* User name
 * Favorite City
 
-### Front-End. 
+## Front-End.
 Make sure that when the user searches for a city, that value goes to two places:
-* Your API call (this should be already working)
-* Your db as the favorite city for the user
+* Your API call 
+* If the user selected it, to your db as the favorite city for the user
 
-#### Features:
+### Features:
+* Any button that allows the user to save a city as their favorite
+* A db that store the favorite city of the user
+* A view of one day of the location that the user is searching. 
 
- * A list with the five days forecasts (already working)
- * A db that store the favorite city of the user 
-
-#### Extra Features:
-* A form so the user can let you their name and email 
-  - Your form store those values in the DB, so in this extra feature, your db will have two additional rows: user name  and user email
+### Extra Features:
+* An Update button to update the favorite city from the user
+* Ask the user for an email and register this camp in your DB too
+* Error handling
+  - Your form should use HTML input attributes to validate input and make entering data fast and easy
   - Show a user-visible error message to indicate what's wrong and how the user can fix it
+* A test file to test your form component
