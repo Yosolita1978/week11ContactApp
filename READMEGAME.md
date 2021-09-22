@@ -9,7 +9,7 @@ Little fun fact: you build your game in week 5! Do you remember week 5?
 You would have to create a full-stack project following the template from past projects. 
 
 In the front-end, your app could be any of these three games: 
-* Coin flip
+* Your past react-game project (Feel free to use the same game) 
 * Guess my number
 * Tic Tac Toe
 
